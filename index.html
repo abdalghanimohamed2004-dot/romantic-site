@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حكايتنا 🖤🩷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles"></div>
+  <div class="aurora"></div>
+
+  <main>
+    <section id="gate" class="screen active">
+      <div class="card glass">
+        <div class="ring">💍</div>
+        <p class="eyebrow">حنين 🩷 عبد الرحمن</p>
+        <h1>تاريخ قراءة الفاتحة</h1>
+        <p class="sub">لو فاكرة اليوم اللي بدأ فيه أجمل فصل في حكايتنا… اكتبيه هنا 🩷</p>
+
+        <div class="date-row">
+          <label>
+            اليوم
+            <input id="day" type="number" min="1" max="31" placeholder="يوم">
+          </label>
+          <span class="slash">/</span>
+          <label>
+            الشهر
+            <input id="month" type="number" min="1" max="12" placeholder="شهر">
+          </label>
+        </div>
+
+        <button id="enterBtn" class="neon-btn">دخول 🩷</button>
+        <p id="error" class="error"></p>
+      </div>
+    </section>
+
+    <section id="home" class="screen">
+      <div class="hero">
+        <p class="eyebrow">WELCOME TO OUR LITTLE WORLD</p>
+        <h2>أهلاً بيكي يا حنين في عالمنا 🖤🩷</h2>
+        <p class="hero-text">الموقع ده مش مجرد كلام… ده جزء صغير من اللي جوا قلبي ليكي.</p>
+        <button class="neon-btn" data-next="message">كمّلي الحكاية ✨</button>
+      </div>
+    </section>
+
+    <section id="message" class="screen">
+      <div class="content-card glass">
+        <span class="big-heart">🩷</span>
+        <p class="eyebrow">A MESSAGE FOR YOU</p>
+        <h2>إنتِ مش مجرد حد بحبه</h2>
+        <p class="letter">
+          إنتِ الشخص اللي وجوده بيخلّي الأيام العادية ليها معنى مختلف.
+          يمكن الكلام عمره ما يوصف كل اللي جوايا، بس لو في حاجة واحدة متأكد منها،
+          فهي إني مبسوط إن حكايتنا بدأت، ومبسوط أكتر إن لسه عندنا فصول كتير نعيشها سوا.
+        </p>
+        <button class="ghost-btn" data-next="questions">عندي كام سؤال ليكي 🩷</button>
+      </div>
+    </section>
+
+    <section id="questions" class="screen">
+      <div class="content-card glass">
+        <p class="eyebrow">JUST BETWEEN US</p>
+        <h2 id="questionText">إيه أكتر حاجة بتحبيها فيا؟ 🩷</h2>
+        <textarea id="answer" placeholder="اكتبي إجابتك هنا..."></textarea>
+        <div class="question-actions">
+          <button id="nextQuestion" class="neon-btn">التالي ✨</button>
+          <button id="skipQuestions" class="ghost-btn">من غير أسئلة →</button>
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+    <section id="final" class="screen">
+      <div class="final-wrap">
+        <div class="rings">∞</div>
+        <p class="eyebrow">THE END IS JUST ANOTHER BEGINNING</p>
+        <h2>حنين… ولو هختار من البداية، هختارك إنتِ 🩷</h2>
+        <p>
+          من عبد الرحمن إلى حنين… دي صفحتي الصغيرة ليكي، لكن الحكاية الحقيقية لسه بتتكتب.
+          <br>كل سنة وإنتِ أجمل حاجة حصلتلي.
+        </p>
+        <div class="quote">«وجودك في حياتي رزق… وأنا ممتن ليه كل يوم.»</div>
+        <button class="neon-btn" onclick="location.reload()">ابدئي الحكاية من جديد 🖤</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="musicBox" class="music-box">
+    <span>🎵 حب رزق</span>
+    <button id="musicToggle">إيقاف</button>
+  </div>
+
+  <audio id="song" preload="auto" loop>
+    <source src="assets/Albumaty.Com_tamr_aashwr_hbk_rzk.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
